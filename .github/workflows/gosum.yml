@@ -1,0 +1,14 @@
+name: gosum
+
+on:
+  push:
+    branches:
+      - 'master'
+    paths:
+      - '.github/workflows/gosum.yml'
+      - 'go.mod'
+      - 'go.sum'
+
+jobs:
+  fix:
+    uses: shlyo/.github/.github/workflows/app-gosum.yml@master
